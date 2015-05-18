@@ -1,5 +1,7 @@
 package com.codi.testtheme;
 
+import android.app.DatePickerDialog;
+import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -12,7 +14,10 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
+
+import java.util.Calendar;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -38,20 +43,32 @@ public class MainActivity extends AppCompatActivity {
 
         ((ImageView) findViewById(R.id.iv)).setImageDrawable(drawable);
 
-        AlertDialog dialog = new AlertDialog.Builder(this)
-                .setTitle("hello").setMessage("are you ok?\n\nwhat are you doing...")
-                .setPositiveButton("Sure", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
+//        AlertDialog dialog = new AlertDialog.Builder(this)
+//                .setTitle("hello").setMessage("are you ok?\n\nwhat are you doing...")
+//                .setPositiveButton("Sure", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//
+//                    }
+//                }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//
+//                    }
+//                }).create();
+//        dialog.show();
 
-                    }
-                }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
+        Calendar calendar = Calendar.getInstance();
+        DatePickerDialog datePickerDialog = new DatePickerDialog(this, null,
+                calendar.get(Calendar.YEAR),
+                calendar.get(Calendar.MONTH),
+                calendar.get(Calendar.DAY_OF_MONTH));
+        datePickerDialog.show();
 
-                    }
-                }).create();
-        dialog.show();
+        TimePickerDialog timePickerDialog = new TimePickerDialog(this, null,
+                calendar.get(Calendar.HOUR_OF_DAY),
+                calendar.get(Calendar.MINUTE), true);
+        timePickerDialog.show();
 
     }
 

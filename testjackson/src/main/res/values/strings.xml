@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestJackson</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="parser_user">parser user</string>
+    <string name="parser_user_bean">parser user bean</string>
+    <string name="parser_user_bean_1">parser user bean 1</string>
+</resources>
