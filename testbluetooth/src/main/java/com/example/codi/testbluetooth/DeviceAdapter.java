@@ -6,6 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -44,6 +47,30 @@ public class DeviceAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return null;
+        Holder holder;
+        if (convertView == null) {
+            convertView = mInflater.inflate(R.layout.adapter_device_item, parent, false);
+            holder = new Holder();
+            holder.mName = (TextView) convertView.findViewById(R.id.device_name_item);
+            holder.mAddress = (TextView) convertView.findViewById(R.id.device_address_item);
+            holder.mStatus = (TextView) convertView.findViewById(R.id.device_status_item);
+            convertView.setTag(holder);
+        } else {
+            holder = (Holder) convertView.getTag();
+        }
+
+        BluetoothDevice device = mDevices.get(position);
+        holder.mName.setText(device.getName());
+        holder.mAddress.setText(device.getAddress());
+        holder.mStatus.setText(String.valueOf(device.getBondState()));
+
+        return convertView;
     }
+
+    static class Holder {
+        TextView mName;
+        TextView mAddress;
+        TextView mStatus;
+    }
+
 }

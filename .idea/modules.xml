@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Test.iml" filepath="$PROJECT_DIR$/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testanimation/testanimation.iml" filepath="$PROJECT_DIR$/testanimation/testanimation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testbluetooth/testbluetooth.iml" filepath="$PROJECT_DIR$/testbluetooth/testbluetooth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testfirebase/testfirebase.iml" filepath="$PROJECT_DIR$/testfirebase/testfirebase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testgradle/testgradle.iml" filepath="$PROJECT_DIR$/testgradle/testgradle.iml" />
       <module fileurl="file://$PROJECT_DIR$/testjackson/testjackson.iml" filepath="$PROJECT_DIR$/testjackson/testjackson.iml" />
       <module fileurl="file://$PROJECT_DIR$/testtheme/testtheme.iml" filepath="$PROJECT_DIR$/testtheme/testtheme.iml" />
     </modules>

@@ -1,1 +1,1 @@
-include ':testtheme', ':testjackson'
+include ':testtheme', ':testjackson', ':testbluetooth', ':testfirebase', ':testgradle', ':testanimation'
