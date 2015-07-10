@@ -11,9 +11,14 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/testanimation" />
             <option value="$PROJECT_DIR$/testbluetooth" />
+            <option value="$PROJECT_DIR$/testdatabinder" />
             <option value="$PROJECT_DIR$/testfirebase" />
+            <option value="$PROJECT_DIR$/testfloatwindow" />
+            <option value="$PROJECT_DIR$/testgaodemap" />
             <option value="$PROJECT_DIR$/testgradle" />
+            <option value="$PROJECT_DIR$/testintentflag" />
             <option value="$PROJECT_DIR$/testjackson" />
+            <option value="$PROJECT_DIR$/testrecycleviewdragswipe" />
             <option value="$PROJECT_DIR$/testtheme" />
           </set>
         </option>

@@ -43,32 +43,32 @@ public class MainActivity extends AppCompatActivity {
 
         ((ImageView) findViewById(R.id.iv)).setImageDrawable(drawable);
 
-//        AlertDialog dialog = new AlertDialog.Builder(this)
-//                .setTitle("hello").setMessage("are you ok?\n\nwhat are you doing...")
-//                .setPositiveButton("Sure", new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//
-//                    }
-//                }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//
-//                    }
-//                }).create();
-//        dialog.show();
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setTitle("hello").setMessage("are you ok?\n\nwhat are you doing...")
+                .setPositiveButton("Sure", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
 
-        Calendar calendar = Calendar.getInstance();
-        DatePickerDialog datePickerDialog = new DatePickerDialog(this, null,
-                calendar.get(Calendar.YEAR),
-                calendar.get(Calendar.MONTH),
-                calendar.get(Calendar.DAY_OF_MONTH));
-        datePickerDialog.show();
+                    }
+                }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
 
-        TimePickerDialog timePickerDialog = new TimePickerDialog(this, null,
-                calendar.get(Calendar.HOUR_OF_DAY),
-                calendar.get(Calendar.MINUTE), true);
-        timePickerDialog.show();
+                    }
+                }).create();
+        dialog.show();
+
+//        Calendar calendar = Calendar.getInstance();
+//        DatePickerDialog datePickerDialog = new DatePickerDialog(this, null,
+//                calendar.get(Calendar.YEAR),
+//                calendar.get(Calendar.MONTH),
+//                calendar.get(Calendar.DAY_OF_MONTH));
+//        datePickerDialog.show();
+//
+//        TimePickerDialog timePickerDialog = new TimePickerDialog(this, null,
+//                calendar.get(Calendar.HOUR_OF_DAY),
+//                calendar.get(Calendar.MINUTE), true);
+//        timePickerDialog.show();
 
     }
 

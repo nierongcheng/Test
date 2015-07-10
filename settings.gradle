@@ -1,1 +1,1 @@
-include ':testtheme', ':testjackson', ':testbluetooth', ':testfirebase', ':testgradle', ':testanimation'
+include ':testtheme', ':testjackson', ':testbluetooth', ':testfirebase', ':testgradle', ':testanimation', ':testdatabinder', ':testgaodemap', ':testfloatwindow', ':testrecycleviewdragswipe', ':testintentflag'

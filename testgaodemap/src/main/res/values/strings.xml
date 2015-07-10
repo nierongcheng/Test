@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestGaoDeMap</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="gaode_map_key">a6bd6de88039255bd6c3f4fd7fe3ff5c</string>
+    <string name="gaode_rest_key">deff69b4cb560a2d1c3cba61525defc8</string>
+</resources>

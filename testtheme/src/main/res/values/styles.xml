@@ -3,7 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="android:colorPrimary">#00aa00</item>
+        <item name="android:colorPrimary">#0000aa</item>
         <item name="android:colorPrimaryDark">#aa0000</item>
     </style>
 
