@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/testgradle" />
             <option value="$PROJECT_DIR$/testintentflag" />
             <option value="$PROJECT_DIR$/testjackson" />
+            <option value="$PROJECT_DIR$/testjsinteraction" />
             <option value="$PROJECT_DIR$/testrecycleviewdragswipe" />
             <option value="$PROJECT_DIR$/testtheme" />
           </set>

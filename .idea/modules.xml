@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/testgradle/testgradle.iml" filepath="$PROJECT_DIR$/testgradle/testgradle.iml" />
       <module fileurl="file://$PROJECT_DIR$/testintentflag/testintentflag.iml" filepath="$PROJECT_DIR$/testintentflag/testintentflag.iml" />
       <module fileurl="file://$PROJECT_DIR$/testjackson/testjackson.iml" filepath="$PROJECT_DIR$/testjackson/testjackson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testjsinteraction/testjsinteraction.iml" filepath="$PROJECT_DIR$/testjsinteraction/testjsinteraction.iml" />
       <module fileurl="file://$PROJECT_DIR$/testrecycleviewdragswipe/testrecycleviewdragswipe.iml" filepath="$PROJECT_DIR$/testrecycleviewdragswipe/testrecycleviewdragswipe.iml" />
       <module fileurl="file://$PROJECT_DIR$/testtheme/testtheme.iml" filepath="$PROJECT_DIR$/testtheme/testtheme.iml" />
     </modules>
