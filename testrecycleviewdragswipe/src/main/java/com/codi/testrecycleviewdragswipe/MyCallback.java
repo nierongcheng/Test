@@ -3,16 +3,14 @@ package com.codi.testrecycleviewdragswipe;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 
-import org.apache.http.impl.client.TunnelRefusedException;
-
 /**
  * Created by Codi on 2015/7/10 0010.
  */
 public class MyCallback extends ItemTouchHelper.Callback {
 
-    private RecyclerListAdapter mAdapter;
+    private MyAdapter mAdapter;
 
-    public MyCallback(RecyclerListAdapter adapter) {
+    public MyCallback(MyAdapter adapter) {
         this.mAdapter = adapter;
     }
 
@@ -44,8 +42,4 @@ public class MyCallback extends ItemTouchHelper.Callback {
         return true;
     }
 
-    public interface ItemTouchHelperAdapter {
-        void onItemMove(int fromPosition, int toPosition);
-        void onItemDismiss(int position);
-    }
 }

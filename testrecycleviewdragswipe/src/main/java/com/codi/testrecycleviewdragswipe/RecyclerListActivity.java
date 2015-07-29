@@ -2,41 +2,21 @@ package com.codi.testrecycleviewdragswipe;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import java.util.ArrayList;
-
-public class MainActivity extends AppCompatActivity {
-
-    private RecyclerView mRecyclerView;
+public class RecyclerListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        ArrayList<String> datas = new ArrayList<>();
-        for(int i = 0; i < 50; i++) {
-            datas.add("Item " + i);
-        }
-
-        MyAdapter adapter = new MyAdapter(this, datas);
-        mRecyclerView.setAdapter(adapter);
-        MyCallback callback = new MyCallback(adapter);
-        ItemTouchHelper helper = new ItemTouchHelper(callback);
-        helper.attachToRecyclerView(mRecyclerView);
+        setContentView(R.layout.activity_recycler_list);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_recycler_list, menu);
         return true;
     }
 
